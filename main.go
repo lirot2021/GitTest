@@ -1,10 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"p/calendar"
+	"time"
+)
 
-func PrintHello(name string) string {
-	return fmt.Sprintf("Hello, %s!", name)
-}
 func main() {
-	fmt.Println("Test")
+	fmt.Println("Календарь")
+	now := time.Now()
+	calendar.DrawCalendar(now)
 }
