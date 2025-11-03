@@ -1,7 +1,7 @@
-package test
+package main
 
 import "fmt"
 
 func PrintHello(name string) string {
-	return fmt.Sprintf("Hello, %s", name)
+	return fmt.Sprintf("Hello, %s!", name)
 }
