@@ -58,7 +58,8 @@ func DrawCalendar(t time.Time) {
 	m := t.Month()
 	firstDayMonth := time.Date(y, m, 1, 0, 0, 0, 1, time.UTC)
 	days := meet(firstDayMonth, howDaysInMonyh(int(m), isLeap(y)))
-	fmt.Printf("--------%d--------\n", y)
+	fmt.Printf("\n\n\n--------%d--------\n", y)
+	fmt.Println(m, "\n")
 	fmt.Println("Su Mo Tu We Th Fr Sa")
 	for i, day := range days {
 		fmt.Print(day)
