@@ -9,5 +9,7 @@ import (
 func main() {
 	fmt.Println("Календарь")
 	now := time.Now()
-	calendar.DrawCalendar(now)
+	for i := 0; i < 12; i++{
+		calendar.DrawCalendar(now.Add(time.Month*i))
+	}
 }
