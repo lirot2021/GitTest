@@ -12,4 +12,6 @@ func main() {
 	for i := 0; i < 12; i++ {
 		calendar.DrawCalendar(now.AddDate(0, i, 0))
 	}
+	fmt.Println(":^)")
+	fmt.Println("Я лосось поющий, на пляжу ляжущий")
 }
